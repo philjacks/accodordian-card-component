@@ -1,2 +1,2 @@
-# accodordian-card-component
+# accordian-card-component
 challenge from frontendmentor.io
