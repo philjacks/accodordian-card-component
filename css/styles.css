@@ -59,6 +59,7 @@ body {
 }
 
 h1 {
+  font-size: 2rem;
   text-align: center;
   margin: 0 0 2rem 0;
 }
@@ -70,7 +71,7 @@ h1 {
   color: hsl(240, 6%, 50%);
 }
 .q-btn {
-  font-weight: 700;
+  font-weight: 400;
   color: hsl(240, 6%, 50%);
   margin-bottom: 0.5rem;
   width: 100%;
@@ -87,7 +88,11 @@ h1 {
   margin-bottom: 0.4rem;
   line-height: 1.2rem;
 }
+.answer > p {
+  width: 90%;
+}
 
+/* Toggle classes */
 .closed {
   display: none;
 }
@@ -98,8 +103,12 @@ h1 {
   font-weight: 700;
   color: hsl(237, 12%, 33%);
 }
+.flipped {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   .faq {
     width: 80%;
     align-self: center;
@@ -160,5 +169,8 @@ h1 {
 
   .question {
     margin: 0.8rem 0;
+  }
+  .answer > p {
+    width: 100%;
   }
 }
