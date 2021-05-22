@@ -10,7 +10,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(
-      135deg,
+      180deg,
       hsl(273, 75%, 66%) 60%,
       hsl(240, 73%, 65%)
     )
@@ -19,12 +19,110 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
 }
 
 .card {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background: white;
   border-radius: 20px;
-  padding: 4rem;
+  padding: 1rem 1rem 3rem;
+  width: 85%;
+  background-image: url("../img/bg-pattern-mobile.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.card-img {
+  margin-bottom: -4rem;
+}
+
+#woman-desktop {
+  display: none;
+}
+#woman-mobile {
+  margin: auto;
+  display: block;
+  position: relative;
+  top: -125px;
+  right: 18px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.question {
+  padding: 0.3rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin-bottom: 0.5rem;
+  color: hsl(240, 6%, 50%);
+}
+.q-btn {
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.q-btn:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+.answer {
+  /* font-size: 0.8rem; */
+  margin-bottom: 0.4rem;
+  line-height: 1.2rem;
+}
+
+.closed {
+  display: none;
+}
+.active {
+  display: block;
+}
+.bold {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+
+@media screen and (min-width: 880px) {
+  body {
+    background: linear-gradient(
+        135deg,
+        hsl(273, 75%, 66%) 60%,
+        hsl(240, 73%, 65%)
+      )
+      no-repeat;
+  }
+  .card {
+    flex-direction: row;
+    position: relative;
+    min-height: 50%;
+    width: 70%;
+    padding: 3rem;
+    background-image: url("../img/bg-pattern-desktop.svg");
+    background-position: -300% 60%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  #woman-desktop {
+    display: block;
+    position: relative;
+    bottom: 20px;
+    right: 150px;
+  }
+  #woman-mobile {
+    display: none;
+  }
+
+  h1 {
+    text-align: left;
+  }
 }
