@@ -28,6 +28,7 @@ body {
   background: white;
   border-radius: 20px;
   padding: 1rem 1rem 3rem;
+  min-width: 70%;
   max-width: 85%;
   background-image: url("../img/bg-pattern-mobile.svg");
   background-position: top center;
@@ -56,7 +57,6 @@ body {
 
 .faq {
   flex: 1;
-  align-self: center;
 }
 
 h1 {
@@ -100,13 +100,13 @@ h1 {
   color: hsl(237, 12%, 33%);
 }
 
-@media screen and (min-width: 1277px) {
+@media screen and (min-width: 1000px) {
   .card {
     flex-direction: row;
     justify-content: center;
-    position: relative;
     min-height: 50%;
-    max-width: 56rem;
+    min-width: 800px;
+    max-width: 900px;
     padding: 3rem;
     background-image: url("../img/bg-pattern-desktop.svg");
     background-size: 60%;
@@ -117,6 +117,7 @@ h1 {
   }
   .card-img {
     overflow: hidden;
+    padding-right: 3rem;
   }
 
   #woman-desktop {
@@ -124,7 +125,7 @@ h1 {
     position: relative;
     width: 29rem;
     bottom: -50px;
-    right: 80px;
+    right: 78px;
   }
   #woman-mobile {
     display: none;
@@ -132,14 +133,16 @@ h1 {
 
   #box {
     display: block;
-    position: absolute;
-    left: -10.3%;
-    top: 41%;
+    position: relative;
+    width: 191px;
+    height: 184px;
+    right: 54%;
+    top: 175px;
+    z-index: 3;
   }
 
   .faq {
-    margin-top: 2rem;
-    align-self: flex-start;
+    margin: 2rem 5rem 0 -7rem;
   }
 
   h1 {
@@ -148,6 +151,6 @@ h1 {
   }
 
   .question {
-    width: 80%;
+    margin: 0.8rem 0;
   }
 }
