@@ -28,8 +28,7 @@ body {
   background: white;
   border-radius: 20px;
   padding: 1rem 1rem 3rem;
-  min-width: 70%;
-  max-width: 85%;
+  width: 90%;
   background-image: url("../img/bg-pattern-mobile.svg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -100,7 +99,14 @@ h1 {
   color: hsl(237, 12%, 33%);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 400px) {
+  .faq {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
   .card {
     flex-direction: row;
     justify-content: center;
@@ -143,6 +149,8 @@ h1 {
 
   .faq {
     margin: 2rem 5rem 0 -7rem;
+    width: 100%;
+    align-self: flex-start;
   }
 
   h1 {
