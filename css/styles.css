@@ -108,11 +108,11 @@ h1 {
     min-width: 800px;
     max-width: 900px;
     padding: 3rem;
+    margin: 0 auto;
     background-image: url("../img/bg-pattern-desktop.svg");
-    background-size: 60%;
-    background-position: -37% 7%;
+    background-size: 80%;
+    background-position: -190% center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     padding: 1rem 1rem 1rem 0;
   }
   .card-img {
