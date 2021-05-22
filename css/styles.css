@@ -62,6 +62,7 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin: 0 0 2rem 0;
+  color: hsl(238, 29%, 16%);
 }
 
 .question {
