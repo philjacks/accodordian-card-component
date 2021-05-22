@@ -28,7 +28,7 @@ body {
   background: white;
   border-radius: 20px;
   padding: 1rem 1rem 3rem;
-  width: 85%;
+  max-width: 85%;
   background-image: url("../img/bg-pattern-mobile.svg");
   background-position: top center;
   background-repeat: no-repeat;
