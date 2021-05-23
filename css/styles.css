@@ -32,6 +32,7 @@ body {
   background-image: url("../img/bg-pattern-mobile.svg");
   background-position: top center;
   background-repeat: no-repeat;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .card-img {
@@ -71,6 +72,12 @@ h1 {
   margin-bottom: 0.5rem;
   color: hsl(240, 6%, 50%);
 }
+
+.arrow {
+  width: 10px;
+  height: 7px;
+}
+
 .q-btn {
   font-weight: 400;
   color: hsl(240, 6%, 50%);
