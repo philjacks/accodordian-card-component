@@ -120,7 +120,7 @@ h1 {
   .card {
     flex-direction: row;
     justify-content: center;
-    min-height: 60%;
+    min-height: 50%;
     min-width: 800px;
     max-width: 900px;
     padding: 3rem;
